@@ -1,29 +1,24 @@
-# generic-python-project-template
-generic-python-project-template
+# Transfer Learning Implementation
 
-## STEPS -
-
-### STEP 01- Create a repository by using template repository
-
-### STEP 02- Clone the new repository
-
-### STEP 03- Create a conda environment after opening the repository in VSCODE
+## Create Environment
 
 ```bash
-conda create --prefix ./env python=3.7 -y
+conda create --prefix ./envs python==3.7.9 -y
 ```
 
+## Activate Environment
+
 ```bash
-conda activate ./env
-```
-OR
-```bash
-source activate ./env
+conda activate ./envs
 ```
 
-### STEP 04- install the requirements
+## Install Requirements/Libs
+
 ```bash
-pip install -r requirements.txt
+pip install -r requiements.txt
 ```
 
-### STEP 06- commit and push the changes to the remote repository
+## Train the model
+```bash
+python src/training.py
+```

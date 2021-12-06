@@ -1,8 +1,20 @@
 # It contains all the configs required in the project
 
-artifacts:
-  KEY: value
+params:
+  seed: 2001
+  epochs: 20
+  batch_size: 32
+  base_num_classes: 10
+  base_loss_function: sparse_categorical_crossentropy
+  metrics: accuracy
+  optimizer: SGD
+  validation_datasize: 5000
 
-source_data_dirs:
-  - path_to_data_1
-  - path_to_data_1
+
+artifacts:
+  artifacts_dir: artifacts
+  model_dir: model
+  plots_dir: plots
+
+logs:
+  logs_dir: logs
