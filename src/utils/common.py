@@ -21,3 +21,8 @@ def save_json(path: str, data: dict) -> None:
         json.dump(data, f, indent=4)
 
     logging.info(f"json file saved at: {path}")
+
+def get_timestamp(name):
+    timestamp = time.asctime().replace(" ","_").replace(":","_")
+    unique_name = f"{name}_at_{timestamp}"
+    return unique_name
