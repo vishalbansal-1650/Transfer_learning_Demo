@@ -26,4 +26,7 @@ python src/01_base_model_creation.py
 ```bash
 python src/02_transfer_learning_even_odd.py
 ```
-
+## Train the New model using transfer learning
+```bash
+python src/03_transfer_learning_less_than_5.py
+```
